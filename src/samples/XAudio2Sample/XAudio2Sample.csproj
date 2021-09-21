@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\XAudio2SampleLibraryC\XAudio2SampleLibraryC.vcxproj" />
+    <ProjectReference Include="..\..\Vortice.XAudio2\Vortice.XAudio2.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NAudio" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="..\XAudio2SampleLibraryC\bin\x64\$(Configuration)\XAudio2SampleLibraryC.dll">
+      <Link>x64\XAudio2SampleLibraryC.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\XAudio2SampleLibraryC\bin\Win32\$(Configuration)\XAudio2SampleLibraryC.dll">
+      <Link>x86\XAudio2SampleLibraryC.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Test.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

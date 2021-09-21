@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.31710.8
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vortice.DirectX", "src\Vortice.DirectX\Vortice.DirectX.csproj", "{A9645572-0847-4FDA-90F4-0ACA2C257847}"
 EndProject
@@ -75,6 +75,15 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Direct3D11", "Direct3D11", "{427B8D27-74DB-4BAA-A2EA-8671266FC8EE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Legacy", "Legacy", "{E9F88B1E-7B78-4806-BC55-E9375F130AAC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XAudio2Sample", "src\samples\XAudio2Sample\XAudio2Sample.csproj", "{4460594B-5BD5-4FBE-946B-762123A7F474}"
+	ProjectSection(ProjectDependencies) = postProject
+		{63A08A63-CFCA-448E-8DFF-C20C099074BA} = {63A08A63-CFCA-448E-8DFF-C20C099074BA}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XAudio2SampleC", "src\samples\XAudio2SampleC\XAudio2SampleC.vcxproj", "{645796E0-44C1-4FAF-BBFF-34CCE628CB39}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XAudio2SampleLibraryC", "src\samples\XAudio2SampleLibraryC\XAudio2SampleLibraryC.vcxproj", "{63A08A63-CFCA-448E-8DFF-C20C099074BA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -174,6 +183,16 @@ Global
 		{ABB39205-20AC-4A1F-9066-1339E6F41ED6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ABB39205-20AC-4A1F-9066-1339E6F41ED6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ABB39205-20AC-4A1F-9066-1339E6F41ED6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4460594B-5BD5-4FBE-946B-762123A7F474}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4460594B-5BD5-4FBE-946B-762123A7F474}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4460594B-5BD5-4FBE-946B-762123A7F474}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4460594B-5BD5-4FBE-946B-762123A7F474}.Release|Any CPU.Build.0 = Release|Any CPU
+		{645796E0-44C1-4FAF-BBFF-34CCE628CB39}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{645796E0-44C1-4FAF-BBFF-34CCE628CB39}.Debug|Any CPU.Build.0 = Debug|x64
+		{645796E0-44C1-4FAF-BBFF-34CCE628CB39}.Release|Any CPU.ActiveCfg = Release|Win32
+		{63A08A63-CFCA-448E-8DFF-C20C099074BA}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{63A08A63-CFCA-448E-8DFF-C20C099074BA}.Debug|Any CPU.Build.0 = Debug|x64
+		{63A08A63-CFCA-448E-8DFF-C20C099074BA}.Release|Any CPU.ActiveCfg = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -191,6 +210,9 @@ Global
 		{98D5E500-0B04-4EB9-B7E9-81CFBD58F2CB} = {5676F50D-CC54-4DC6-980D-6B68FFF64065}
 		{427B8D27-74DB-4BAA-A2EA-8671266FC8EE} = {5676F50D-CC54-4DC6-980D-6B68FFF64065}
 		{E9F88B1E-7B78-4806-BC55-E9375F130AAC} = {5676F50D-CC54-4DC6-980D-6B68FFF64065}
+		{4460594B-5BD5-4FBE-946B-762123A7F474} = {5676F50D-CC54-4DC6-980D-6B68FFF64065}
+		{645796E0-44C1-4FAF-BBFF-34CCE628CB39} = {5676F50D-CC54-4DC6-980D-6B68FFF64065}
+		{63A08A63-CFCA-448E-8DFF-C20C099074BA} = {5676F50D-CC54-4DC6-980D-6B68FFF64065}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B0734700-42E1-4F87-8DD2-0084849DA44A}

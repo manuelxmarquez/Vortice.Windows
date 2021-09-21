@@ -159,6 +159,9 @@
     <map struct="XAUDIO2_BUFFER" native="true" struct-to-class="true" marshal="false" new="false" />
     <map field="XAUDIO2_BUFFER::pAudioData" name="AudioDataPointer" />
 
+    <!-- XAUDIO2FX_REVERB_PARAMETERS -->
+    <map struct="XAUDIO2FX_REVERB_PARAMETERS" name="ReverbParameters" pack="1" />
+
     <!-- XAUDIO2_BUFFER_WMA -->
     <map struct="XAUDIO2_BUFFER_WMA" visibility="internal"/>
     <map field="XAUDIO2_BUFFER_WMA::pDecodedPacketCumulativeBytes" name="DecodedPacketCumulativeBytesPointer" />
@@ -210,6 +213,8 @@
     <map method="IXAudio2Voice::SetEffectParameters" visibility="internal" hresult="true" check="false" />
     <map method="IXAudio2Voice::SetEffectChain" visibility="internal" property="false" />
     <map method="IXAudio2Voice::GetVolume" visibility="private" property="false"/>
+    <map method="IXAudio2Voice::GetChannelMask" property="false" />
+    <map method="IXAudio2Voice::GetVoiceDetails" property="false"/>
 
     <!-- IXAudio2SourceVoice -->
     <map method="IXAudio2SourceVoice::SetSourceSampleRate" property="false"/>
